@@ -1,0 +1,18 @@
+<svg id="Icon" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #d7d7d7;
+        stroke-width: 2px;
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #666;
+      }
+    </style>
+  </defs>
+  <circle id="Body" class="cls-1" cx="11" cy="11" r="10"/>
+  <rect id="Minus" class="cls-2" x="7" y="10" width="8" height="2" rx="1" ry="1"/>
+</svg>
