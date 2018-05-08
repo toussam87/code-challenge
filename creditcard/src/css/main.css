@@ -121,7 +121,7 @@ body {
     color: #8393ca;
     font-size: 1.6vw;
     text-align: right;
-    width: 30%;
+    vertical-align: 1vw;
     position: relative;
     display: inline;
     font-weight: 600;
