@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
 body {
     margin: 0px;
     background-color: #ffcc66;
@@ -9,7 +10,12 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    font-size: 18px;
+    letter-spacing: .5px;
 }
+
 
 /* .wrapper {
     background-color: #ffffff;
@@ -39,11 +45,14 @@ body {
     margin: 2.03vw auto;
     font-size: 19px;
     text-align: left;
+    font-size: 24px;
 }
 
 .addCard {
     display: inline-block;
+    fill: #c6cce2;
 }
+
 .main {
     background-color: #ffffff;
     width: 49vw;
@@ -62,18 +71,23 @@ body {
 }
 
 .card img {
-    padding: 1vw;
+    padding: 1.5vw;
 }
 
 .card .card-number,
 .card .expir-date {
     display: block;
-    padding: 1vw;
+    padding: .9vw 1.9vw;
     font-size: 16px;
+    font-weight: 400;
+}
+
+.card .expir-date {
+    color: #b3b3b3
 }
 
 .main .heading {
-    width: 30vw;
+    width: 24vw;
     display: inline-block;
     text-align: left;
 }
@@ -81,14 +95,39 @@ body {
 .bal-total,
 .icon,
 .trans,
-.balance {
+.balance-minus,
+.balance-add {
     display: inline-block;
+}
+
+.trans {
+    width: 70%;
+}
+
+.bal-total {
+    font-size: 36px;
+    color: #444750;
+}
+
+.balance-minus {
+    color: #8393ca;
+    font-size: 18px;
+    text-align: right;
+    width: 30%;
+    position: relative;
+    display: inline;
+}
+
+.balnce-add {
+    color: #66cc33;
+    font-size: 18px;
 }
 
 .icon {
     padding: 1.2vw;
     padding-left: 0;
 }
+
 .minus-transaction,
 .trans-name,
 .trans-desc {
@@ -101,11 +140,22 @@ body {
     padding-bottom: .25vw;
 }
 
+.trans-name {
+    color: #333333;
+    font-size: 1.6vw;
+}
+
+.trans-desc {
+    color: #b4b4b4;
+    font-size: 1.3vw;
+}
+
 hr {
     margin-top: 2vw;
     margin-bottom: 2vw;
     width: 36vw;
 }
+
 .minus-transaction {
     width: 36vw;
     text-align: left;
