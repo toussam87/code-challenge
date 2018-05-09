@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
-    margin: 0px;
+    margin: 48px 60px;
     background-color: #ffcc66;
     position: fixed;
     width: 100vw;
@@ -9,8 +9,6 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     color: #707070;
     font-size: 18px;
     letter-spacing: .5px;
@@ -31,8 +29,8 @@ body {
 
 .nav {
     background-color: #f2f2f2;
-    width: 30vw;
-    height: 90vh;
+    width: 360px;
+    height: 700px;
     display: inline-block;
     order: 0;
     left: 0;
@@ -42,34 +40,47 @@ body {
 }
 
 .heading {
-    width: 20vw;
+    width: 210px;
     display: inline-block;
-    margin: 2.03vw auto;
-    font-size: 19px;
+    margin: 55.3px 11px 55px 55.1px;
     text-align: left;
     font-size: 24px;
+    letter-spacing: 1.01px;
 }
 
 .addCard {
     display: inline-block;
     fill: #c6cce2;
+    margin-right: 54px;
 }
 
+.add {
+    width: 20px;
+    height: auto;
+}
 .main {
     background-color: #ffffff;
-    width: 49vw;
-    height: 90vh;
+    width: 520px;
+    height: 700px;
     display: block;
     order: 1;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
+.heading-main {
+    width: 210px;
+    display: inline-block;
+    margin: 55px 75px 33px 25px;
+    text-align: left;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
 .card {
-    width: 23vw;
-    height: 22vh;
+    width: 243px;
+    height: 153px;
     background-color: #ffffff;
-    margin: 2.5vw auto;
+    margin: 0px auto 30px;
     text-align: left;
 }
 
@@ -80,7 +91,7 @@ body {
 .card .card-number,
 .card .expir-date {
     display: block;
-    padding: .9vw 1.9vw;
+    padding: 7px 19px;
     font-size: 16px;
 }
 
