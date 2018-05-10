@@ -84,19 +84,44 @@ body {
     text-align: left;
 }
 
-.card img {
-    padding: 1.5vw;
+.card .visa{
+    padding: 17px 0px 12px 17px;
 }
 
-.card .card-number,
-.card .expir-date {
+.card .amex {
+    padding: 25px 0px 12px 17px;
+}
+
+.card .mc {
+    padding: 22px 0px 12px 17px;
+}
+.card .card-number {
     display: block;
-    padding: 7px 19px;
-    font-size: 16px;
+    padding: 7px 19px 0px;
+    letter-spacing: 1.8px;
+    line-height: 20px;
+}
+
+.card .expir-date-visa {
+    margin: 10px 19px 0px;
+    display: block;
+    letter-spacing: 0px;
+}
+
+.card .expir-date-amex {
+    padding: 9px 19px 0px;
+    display: block;
+    font-size: 15px;
+}
+
+.card .expir-date-mc {
+    padding: 9px 19px 0px;
+    display: block;
+    font-size: 15px;
 }
 
 .card .card-number {
-    font-size: 1.6vw;
+    font-size: 20px;
 }
 
 .card .expir-date {
@@ -119,7 +144,7 @@ body {
 }
 
 .trans {
-    width: 24vw;
+    width: 270px;
 }
 
 .bal-total {
@@ -130,12 +155,13 @@ body {
 
 .balance-minus {
     color: #8393ca;
-    font-size: 1.6vw;
+    font-size: 15px;
     text-align: right;
     vertical-align: 1vw;
     position: relative;
     display: inline;
     font-weight: 600;
+    padding: 0px 30px;
 }
 
 .balnce-add {
@@ -144,8 +170,7 @@ body {
 }
 
 .icon {
-    padding: 1.2vw;
-    padding-left: 0;
+    padding-right: 20px;
 }
 
 .minus-transaction,
@@ -156,32 +181,33 @@ body {
 
 .trans-name,
 .trans-desc {
-    padding-top: .25vw;
-    padding-bottom: .25vw;
+    padding: 4px 0px;
 }
 
 .trans-name {
     color: #333333;
-    font-size: 1.6vw;
+    font-size: 14.5px;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .trans-desc {
     color: #b4b4b4;
-    font-size: 1.3vw;
+    font-size: 14px;
 }
 
 hr {
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    width: 36vw;
+    margin-top: 20px;
+    margin-bottom: 45px;
+    width: 400px;
 }
 
 .minus-transaction {
-    width: 36vw;
+    width: 400px;
     text-align: left;
-    margin: 0 auto;
+    margin: 0 60px;
     position: relative;
+    display: inline;
 }
 
 .balance {
