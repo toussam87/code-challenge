@@ -144,7 +144,8 @@ body {
 }
 
 .trans {
-    width: 270px;
+    width: 273px;
+    margin: 2px;
 }
 
 .bal-total {
@@ -162,6 +163,7 @@ body {
     display: inline;
     font-weight: 600;
     padding: 0px 30px;
+    letter-spacing: 1.4px;
 }
 
 .balnce-add {
@@ -170,7 +172,11 @@ body {
 }
 
 .icon {
-    padding-right: 20px;
+    padding-right: 15px;
+}
+
+.icon img {
+    padding: 7px 0px;
 }
 
 .minus-transaction,
