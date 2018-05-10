@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body {
-    margin: 48px 60px;
+    margin: 0px;
     background-color: #ffcc66;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+    width: 100%;
+    height: 100%;
+    display: table;
     flex-direction: row;
     flex-wrap: wrap;
     color: #707070;
@@ -14,35 +13,30 @@ body {
     letter-spacing: .5px;
 }
 
-
-/* .wrapper {
-    background-color: #ffffff;
-    width: 80vw;
-    height: 90vh;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-} */
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
 
 .nav {
     background-color: #f2f2f2;
-    width: 360px;
+    width: 362px;
     height: 700px;
     display: inline-block;
+    vertical-align: middle;
     order: 0;
-    left: 0;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 .heading {
     width: 210px;
     display: inline-block;
-    margin: 55.3px 11px 55px 55.1px;
+    padding: 54px 11px 52px 55.1px;
     text-align: left;
     font-size: 24px;
     letter-spacing: 1.01px;
@@ -58,6 +52,7 @@ body {
     width: 20px;
     height: auto;
 }
+
 .main {
     background-color: #ffffff;
     width: 520px;
@@ -66,6 +61,10 @@ body {
     order: 1;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .heading-main {
@@ -76,53 +75,71 @@ body {
     font-size: 24px;
     letter-spacing: 1px;
 }
-.card {
-    width: 243px;
-    height: 153px;
+
+.card1,
+.card2,
+.card3 {
+    width: 249px;
+    height: auto;
     background-color: #ffffff;
-    margin: 0px auto 30px;
+    margin: 0px auto 35px;
     text-align: left;
+    border: 3px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 18px 0px;
 }
 
-.card .visa{
-    padding: 17px 0px 12px 17px;
+.card2 {
+    margin: 10px auto 25px
 }
 
-.card .amex {
-    padding: 25px 0px 12px 17px;
+.card3 {
+    margin: 0px auto 48px;
 }
 
-.card .mc {
-    padding: 22px 0px 12px 17px;
+.card1 .visa,
+.card2 .amex,
+.card3 .mc {
+    padding: 0px 18px;
 }
-.card .card-number {
+
+.card1 .card-number,
+.card2 .card-number,
+.card3 .card-number {
     display: block;
-    padding: 7px 19px 0px;
+    padding: 20px 20px 0px;
     letter-spacing: 1.8px;
     line-height: 20px;
+    font-size: 20px;
+    padding: 20px 20px 0px;
 }
 
-.card .expir-date-visa {
-    margin: 10px 19px 0px;
+.expir-date {
+    padding: 10px 20px 0px;
     display: block;
     letter-spacing: 0px;
 }
 
-.card .expir-date-amex {
-    padding: 9px 19px 0px;
+
+/* .card .expir-date-visa {
+    padding: 10px 20px 0px;
     display: block;
+    letter-spacing: 0px;
+}
+
+.card2 .expir-date-amex {
+    padding: 10px 20px 0px;
+    display: block;
+    letter-spacing: 0px;
     font-size: 15px;
 }
 
 .card .expir-date-mc {
-    padding: 9px 19px 0px;
+    padding: 10px 20px 0px;
     display: block;
+    letter-spacing: 0px;
     font-size: 15px;
-}
-
-.card .card-number {
-    font-size: 20px;
-}
+} */
 
 .card .expir-date {
     color: #b3b3b3;
@@ -155,7 +172,7 @@ body {
 
 .balance-minus {
     color: #8393ca;
-    font-size: 15px;
+    font-size: 18px;
     text-align: right;
     vertical-align: 1vw;
     position: relative;
@@ -164,13 +181,25 @@ body {
     padding: 0px 30px;
 }
 
-.balnce-add {
+.balance-add {
     color: #66cc33;
     font-size: 18px;
+    text-align: right;
+    vertical-align: 1vw;
+    position: relative;
+    display: inline;
+    font-weight: 600;
+    padding: 0px 30px;
 }
 
 .icon {
-    padding-right: 20px;
+    padding-right: 15px;
+}
+
+.icon-img {
+    width: 20px;
+    height: 20px;
+    padding: 20px 0 10px;
 }
 
 .minus-transaction,
@@ -182,13 +211,14 @@ body {
 .trans-name,
 .trans-desc {
     padding: 4px 0px;
+    text-align: left;
 }
 
 .trans-name {
     color: #333333;
-    font-size: 14.5px;
+    font-size: 18px;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: .5px;
 }
 
 .trans-desc {
@@ -198,12 +228,13 @@ body {
 
 hr {
     margin-top: 20px;
-    margin-bottom: 45px;
-    width: 400px;
+    margin-bottom: 40px;
+    width: 410px;
 }
 
-.minus-transaction {
-    width: 400px;
+.minus-transaction,
+.add-transaction {
+    width: 410px;
     text-align: left;
     margin: 0 60px;
     position: relative;
