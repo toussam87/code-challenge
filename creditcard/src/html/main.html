@@ -10,7 +10,7 @@
             <span class="heading">My Wallets</span>
         <span class="addCard"><img src="../../images/Add.svg" /></span>
 
-        <div class="card1">
+        <div id="card1" class="visa">
             <img class="visa" src="../../images/VISA.png" />
             <span class="card-number">
                         **** **** **** 2562
@@ -19,7 +19,8 @@
                         Valid Thru: 12/17
                     </span>
         </div>
-        <div class="card2">
+
+        <div id="card2" class="amex">
             <img class="amex" src="../../images/AMEX.png" />
             <span class="card-number">
                         **** ****** 21001
@@ -28,7 +29,8 @@
                         Valid Thru: 07/19
                     </span>
         </div>
-        <div class="card3">
+
+        <div id="card3" class="mc">
             <img class="mc" src="../../images/MC.png" />
             <span class="card-number">
                         **** **** **** 8335
@@ -37,39 +39,174 @@
                         Valid Thru: 09/17
                     </span>
         </div>
-        </span><span class="main">
-            <span class="heading-main">Current Balance</span> <span class="bal-total">$729.00</span>
+
+        </span><span class="bill" id="visa">
+            <span class="main">
+                <span class="heading-main">Current Balance</span>
+        <span class="bal-total">
+                    <span>$729.
+                    <span class="bal-cents">00
+
+                    </span>
+        </span>
+        </span>
 
         <hr>
 
-        <div class="minus-transaction">
-            <div class="icon">
-                <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Apple iPhone 6, 6g GB</span>
+                    <span class="trans-desc">Electronics #343223 - 12 July, 2015</span>
+                </div>
             </div>
-            <div class="trans">
-                <span class="trans-name">Apple iPhone 6, 6g GB</span>
-                <span class="trans-desc">Electronics #343223 - 12 July, 2015</span>
+            <div class="balance-minus">
+                <span>$650.<span class="cents">00</span></span>
             </div>
-        </div>
-        <div class="balance-minus">
-            $650.00
-        </div>
-        <div class="add-transaction">
-            <div class="icon">
-                <img class="icon-img" src="../../images/add-icon.svg" alt="minus icon">
-            </div>
-            <div class="trans">
-                <span class="trans-name">Founds Added</span>
-                <span class="trans-desc">Payment #343212 - 11 July, 2015</span>
+        </section>
+
+        <section class="transaction">
+            <div class="add-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/add-icon.svg" alt="plus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Founds Added</span>
+                    <span class="trans-desc">Payment #343212 - 11 July, 2015</span>
+                </div>
             </div>
             <div class="balance-add">
-                $900.00
+                <span>$900.<span class="cents">00</span></span>
             </div>
-        </div>
+        </section>
 
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Energy Bill</span>
+                    <span class="trans-desc">#343566 - 11 July, 2015</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$84.<span class="cents">96</span></span>
+            </div>
+        </section>
+
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Mega Image SRL</span>
+                    <span class="trans-desc">Food&Health #34365 - 11 July, 2015</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$112.<span class="cents">75</span></span>
+            </div>
+        </section>
+
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">ATM DV2</span>
+                    <span class="trans-desc">#34325 - 09 July, 2015</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$200.<span class="cents">00</span></span>
+            </div>
+        </section>
+
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Lukoil Station</span>
+                    <span class="trans-desc">Gas #343279 - 09 July, 2015</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$190.<span class="cents">48</span></span>
+            </div>
+        </section>
+
+        </span>
+        </span><span class="bill hide" id="amex">
+            <span class="main">
+                <span class="heading-main">Current Balance</span>
+        <span class="bal-total"><span>$2729.<span class="bal-cents">00</span></span>
+        </span>
+
+        <hr>
+
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Air France</span>
+                    <span class="trans-desc">#3223 - 19 July, 2015</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$2050.<span class="cents">31</span></span>
+            </div>
+        </section>
+
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Hotel Oui</span>
+                    <span class="trans-desc">#2102 - 19 July, 2015</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$678.<span class="cents">69</span></span>
+            </div>
+        </section>
+        </span>
+        </span><span class="bill hide" id="mc">
+            <span class="main">
+                <span class="heading-main">Current Balance</span> <span class="bal-total"><span>$29.04<span class="bal-cents">00</span></span>
+        </span>
+
+        <hr>
+
+        <section class="transaction">
+            <div class="minus-transaction">
+                <div class="icon">
+                    <img class="icon-img" src="../../images/minus-icon.svg" alt="minus icon">
+                </div>
+                <div class="trans">
+                    <span class="trans-name">Taco Hut Store#34612 </span>
+                    <span class="trans-desc"> #23431</span>
+                </div>
+            </div>
+            <div class="balance-minus">
+                <span>$29.<span class="cents">04</span></span>
+            </div>
+        </section>
         </span>
     </div>
     <link href="../css/main.css" rel="stylesheet">
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
